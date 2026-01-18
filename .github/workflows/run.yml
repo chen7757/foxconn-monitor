@@ -1,18 +1,20 @@
 name: Run Stock Monitor
 on:
-workflow_dispatch: 
+   workflow_dispatch: 
 jobs:
-run-script:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v2
-- name: Set up Python
-uses: actions/setup-python@v2
-with:
-python-version: '3.9'
-- name: Install dependencies
-run: pip install requests
-- name: Run Monitor
-env:
-DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-run: python monitor.py
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+python@v2
+        with:
+          python-version: '3.9'
+         - name: Install 
+dependencies
+        run: pip install requests
+        - name: Run Monitor
+          env:
+            DISCORDWEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          run: python monitor.py
