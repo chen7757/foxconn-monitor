@@ -1,6 +1,6 @@
 name: Run Stock Monitor
 on:
-workflow_dispatch: # 讓我們可以手動點擊按鈕測試
+workflow_dispatch: 
 jobs:
 run-script:
 runs-on: ubuntu-latest
